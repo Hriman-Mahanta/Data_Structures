@@ -12,6 +12,7 @@ int main()
 		return -1;
 	}
 	fprintf(file, "Hello World!");
+	
 	//fputs("Hello World", file);
 	fclose(file);
 	return 0;
