@@ -11,8 +11,8 @@ int main()
 		printf("Error in creating the file");
 		return -1;
 	}
-	//fputs("Hello World", file);
 	fprintf(file, "Hello World!");
+	//fputs("Hello World", file);
 	fclose(file);
 	return 0;
 }
