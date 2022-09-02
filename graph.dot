@@ -1,15 +1,15 @@
 digraph g{
-5[label="key: 5, height: 6"];
-5 -> 1 [color = red];
-1[label="key: 1, height: 1"];
-1 -> 2 ;
-2[label="key: 2, height: 0"];
-5 -> 6 ;
-6[label="key: 6, height: 3"];
-6 -> 7 ;
-7[label="key: 7, height: 2"];
-7 -> 8 ;
-8[label="key: 8, height: 1"];
-8 -> 9 ;
-9[label="key: 9, height: 0"];
+234[label="key: 234, balance: 0, height: 3"];
+234 -> 89 [color = red, style=dotted];
+89[label="key: 89, balance: -2, height: 2"];
+89 -> 56 [color = red, style=dotted];
+56[label="key: 56, balance: 0, height: 0"];
+89 -> 123 ;
+123[label="key: 123, balance: -1, height: 1"];
+123 -> 223 ;
+223[label="key: 223, balance: 2, height: 0"];
+234 -> 364 ;
+364[label="key: 364, balance: -1, height: 1"];
+364 -> 897 ;
+897[label="key: 897, balance: 0, height: 0"];
 }
