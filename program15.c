@@ -73,6 +73,14 @@ void deleteRoot(int array[], int num)
 
 //Build heap
 
+void buildHeap(int array[], int size)
+{
+	for(int i=(size/2) - 1; i>=0; i--)
+	{
+		heapify(array, size, i);
+	}
+}
+
 //Display heap
 void display(int array[], int size)
 {
