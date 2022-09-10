@@ -1,7 +1,23 @@
 digraph g{
+<<<<<<< HEAD
 43[label="43", color=black];
 43-> 756 ;
 756[label="756", color=black];
 756 -> 54 [color = blue];
 54[label="54", color=red];
+=======
+234[label="key: 234, balance: 0, height: 3"];
+234 -> 89 [color = red, style=dotted];
+89[label="key: 89, balance: -2, height: 2"];
+89 -> 56 [color = red, style=dotted];
+56[label="key: 56, balance: 0, height: 0"];
+89 -> 123 ;
+123[label="key: 123, balance: -1, height: 1"];
+123 -> 223 ;
+223[label="key: 223, balance: 2, height: 0"];
+234 -> 364 ;
+364[label="key: 364, balance: -1, height: 1"];
+364 -> 897 ;
+897[label="key: 897, balance: 0, height: 0"];
+>>>>>>> 3e6ef98ea00c683eb4942669fb05d52e589bc5e2
 }

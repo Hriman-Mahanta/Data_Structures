@@ -12,6 +12,19 @@ struct node
 	int height;
 };
 
+int max(int a, int b)
+{
+	return a>b ? a:b;
+}
+
+int findHeight(struct node *root)
+{
+	if(root == NULL)
+		return -1;
+	else 
+		return root->height;
+}
+
 int bstInsert(struct node **root, int data)
 {
 	if(*root == NULL)
@@ -34,7 +47,7 @@ int bstInsert(struct node **root, int data)
 	{
 		printf("\nElement already present in the BST");
 	}
-	*(root)->height = 1 + max(*(root)->left->height, *(root)->right->height);
+	(*root)->height = 1 + max(findHeight((*root)->left), findHeight((*root)->right));
 	return 0;
 }
 
@@ -71,16 +84,6 @@ int displayBST(struct node *root, char* filename)
     	return 0;
 }
 
-int max(int a, int b)
-{
-	return a>b ? a:b;
-}
-int findHeight(struct node *root)
-{
-	if(root == NULL)
-		return -1;
-	return max(findHeight(root->left), findHeight(root->right)) + 1;
-}
 
 int main()
 {
