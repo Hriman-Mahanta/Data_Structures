@@ -1,15 +1,7 @@
 digraph g{
-5[label="key: 5, height: 6"];
-5 -> 1 [color = red];
-1[label="key: 1, height: 1"];
-1 -> 2 ;
-2[label="key: 2, height: 0"];
-5 -> 6 ;
-6[label="key: 6, height: 3"];
-6 -> 7 ;
-7[label="key: 7, height: 2"];
-7 -> 8 ;
-8[label="key: 8, height: 1"];
-8 -> 9 ;
-9[label="key: 9, height: 0"];
+43[label="43", color=black];
+43-> 756 ;
+756[label="756", color=black];
+756 -> 54 [color = blue];
+54[label="54", color=red];
 }
