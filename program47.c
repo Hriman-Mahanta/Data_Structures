@@ -3,14 +3,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 enum nodeColor {
   RED,
   BLACK
 };
 
+
 struct rbNode {
   int data, color;
   struct rbNode *link[2];
+  int size;
+  int bdepth;
 };
 
 struct rbNode *root = NULL;
@@ -116,6 +120,7 @@ void deletion(int data) {
   struct rbNode *pPtr, *qPtr, *rPtr;
   int dir[98], ht = 0, diff, i;
   enum nodeColor color;
+//  int color;
 
   if (!root) {
     printf("Tree not available\n");
